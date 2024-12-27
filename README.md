@@ -31,6 +31,15 @@
 
 ---
 
+## Modularization 🧩
+
+The project is structured into multiple modules for scalability and separation of concerns.  
+Having: App, data, domain and feature modules
+
+<img src="https://github.com/user-attachments/assets/c5fe5ebc-67ab-4e51-b450-493203ec49ca" alt="Modularization Diagram" width="250" style="margin: 10px;" />
+
+---
+
 ## Screenshots 🖼️
 
 ### Repository List  
