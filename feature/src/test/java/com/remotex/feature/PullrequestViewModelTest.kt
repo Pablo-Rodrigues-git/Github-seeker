@@ -22,7 +22,7 @@ import org.junit.Assert.*
 import org.junit.Before
 
 @OptIn(ExperimentalCoroutinesApi::class)
-class UserViewModelTest {
+class PullrequestViewModelTest {
 
     private val testDispatcher = StandardTestDispatcher()
 
@@ -40,7 +40,7 @@ class UserViewModelTest {
     }
 
     @Test
-    fun `getPulls success`() = runTest {
+    fun `Success get pull-requests`() = runTest {
         val pulls = getListOfPulls()
         coEvery { repository.getPulls(any(), any()) } returns pulls
 
@@ -53,7 +53,7 @@ class UserViewModelTest {
     }
 
     @Test
-    fun `getPulls error`() = runTest {
+    fun `Error geting pull-requests`() = runTest {
         val errorMessage = "Network error"
         coEvery { repository.getPulls(any(), any()) } throws Exception(errorMessage)
 
