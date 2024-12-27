@@ -1,37 +1,39 @@
+# GitHub-Seeker
 
-# Github-seeker is a project that seeks for github repositories and Pull-Requests
+**GitHub-Seeker** is a project that fetches and displays GitHub repositories and their pull requests using the [GitHub REST API](https://docs.github.com/en/rest?apiVersion=2022-11-28).
 
-Este projeto consiste em exibir uma lista de repositorios vinda da API disponibilizada pelo Github (https://docs.github.com/en/rest?apiVersion=2022-11-28)
+## Features
 
-***Features***
+- **Repositories List:** Displays a list of repositories.
+- **Pull Request Details:** View details of pull requests for repositories.
+- **Web Redirection:** Open pull requests in a web browser.
+- **State Management:** Each screen handles loading, empty, and error states for API requests.
 
-Lista de repositorios,
-exibição de detalhes dos pull-requests destes repositorios,
-clique abrindo na web para visualizaçao dos pull-requests,
+---
 
-Todas as telas apresentam estados de loading, empty e erro caso ocorra nas requisiçoes da API.
+## Technologies Used
 
-**Tecnologias utilizadas:**
+- Clean Architecture
+- Modularization  
+- [Kotlin](https://kotlinlang.org/docs/getting-started.html)  
+- [MVVM](https://developer.android.com/jetpack/guide)  
+- [Retrofit](https://square.github.io/retrofit/)  
+- [Dagger Hilt](https://developer.android.com/training/dependency-injection/hilt-android)  
+- [Coroutines](https://developer.android.com/kotlin/coroutines)  
+- [Glide](https://github.com/bumptech/glide)  
+- [Espresso](https://github.com/android/android-test/tree/main/espresso)  
+- [Mockk](https://github.com/mockk/mockk)  
+- [Jetpack Compose](https://developer.android.com/compose)  
+- [Material3](https://developer.android.com/develop/ui/compose/designsystems/material3)  
+- [Lorem Ipsum (Jetpack Compose)](https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/datasource/LoremIpsum)
 
-- [x] Clean Architecture
-- [x] Modularization
+---
 
-![image](https://github.com/user-attachments/assets/c5fe5ebc-67ab-4e51-b450-493203ec49ca)
+## Screenshots
 
-- [x] [Kotlin](https://kotlinlang.org/docs/getting-started.html)
-- [x] [MVVM](https://developer.android.com/jetpack/guide?gclid=CjwKCAiAjp6BBhAIEiwAkO9Wut2W9TLNRaql75qE26vP_xRvCfTBlBY5j8RHxc_r6RhC1HFPTprbwRoC32cQAvD_BwE&gclsrc=aw.ds) 
-- [x] [Retrofit](https://square.github.io/retrofit/)
-- [x] [Dagger Hilt](https://developer.android.com/training/dependency-injection/hilt-android?hl=pt-br)
-- [x] [Coroutines](https://developer.android.com/kotlin/coroutines?hl=pt&gclid=CjwKCAjw4c-ZBhAEEiwAZ105RfTrVnGJiLmLwOlpyyj1S5GTuooYlseMkB8hsgivPj9Eib9Ncva8bBoCYBAQAvD_BwE&gclsrc=aw.ds)
-- [x] [Glide](https://github.com/bumptech/glide)
-- [x] [Espresso](https://github.com/android/android-test/tree/main/espresso)
-- [x] [Mockk](https://github.com/mockk/mockk)
-- [x] [Jetpack Compose](https://developer.android.com/compose?_gl=1*nej9dz*_up*MQ..&gclid=CjwKCAiAmrS7BhBJEiwAei59i8_k49vn8oi6V9YF7YqyezLGNQaVHFbvhLdG6tzpCx6OO-dLOwkrdRoCmRMQAvD_BwE&gclsrc=aw.ds)
-- [x] [Material3](https://developer.android.com/develop/ui/compose/designsystems/material3?hl=pt-br)
-- [x] [Lorem Ipsum from jetpack compose](https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/datasource/LoremIpsum)
-
-
-![image](https://github.com/user-attachments/assets/9cba5429-aa1f-4031-9a70-b759763fb264)![image](https://github.com/user-attachments/assets/9a77b83d-b9f1-481e-9a98-30138d1b8b98)![image](https://github.com/user-attachments/assets/f56a3f4d-9003-4d0c-bb60-c7678fefc76d)
-
-
-
+### Repository List  
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/9cba5429-aa1f-4031-9a70-b759763fb264" alt="Repository List" width="300" />
+  <img src="https://github.com/user-attachments/assets/9a77b83d-b9f1-481e-9a98-30138d1b8b98" alt="Pull Request Details" width="300" />
+  <img src="https://github.com/user-attachments/assets/f56a3f4d-9003-4d0c-bb60-c7678fefc76d" alt="Error State" width="300" />
+</div>
