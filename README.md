@@ -1,8 +1,10 @@
-# GitHub-Seeker
+# GitHub-Seeker 🚀
 
 **GitHub-Seeker** is a project that fetches and displays GitHub repositories and their pull requests using the [GitHub REST API](https://docs.github.com/en/rest?apiVersion=2022-11-28).
 
-## Features
+---
+
+## Features ✨
 
 - **Repositories List:** Displays a list of repositories.
 - **Pull Request Details:** View details of pull requests for repositories.
@@ -11,9 +13,9 @@
 
 ---
 
-## Technologies Used
+## Technologies Used 🛠️
 
-- Clean Architecture
+- Clean Architecture  
 - Modularization  
 - [Kotlin](https://kotlinlang.org/docs/getting-started.html)  
 - [MVVM](https://developer.android.com/jetpack/guide)  
@@ -29,11 +31,16 @@
 
 ---
 
-## Screenshots
+## Screenshots 🖼️
 
 ### Repository List  
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/9cba5429-aa1f-4031-9a70-b759763fb264" alt="Repository List" width="300" />
-  <img src="https://github.com/user-attachments/assets/9a77b83d-b9f1-481e-9a98-30138d1b8b98" alt="Pull Request Details" width="300" />
-  <img src="https://github.com/user-attachments/assets/f56a3f4d-9003-4d0c-bb60-c7678fefc76d" alt="Error State" width="300" />
+  <img src="https://github.com/user-attachments/assets/d44ebf18-dba5-49ec-a007-204a81494ee0" alt="Repositories Loading State" width="300" style="margin: 10px;" />
+  <img src="https://github.com/user-attachments/assets/2467cd63-0e80-412b-82df-e6a840939f32" alt="Repository List" width="300" style="margin: 10px;" />
+  <img src="https://github.com/user-attachments/assets/87ae5dee-b6f0-432f-85f8-3775412a69ba" alt="Pull Request Loading State" width="300" style="margin: 10px;" />
+</div>  
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/5279db72-ad99-4a7d-8ebb-9d23aad9599a" alt="Pull Request Details" width="300" style="margin: 10px;" />
+  <img src="https://github.com/user-attachments/assets/93e2af76-6072-41cb-bd0c-83ee650b8703" alt="Open webpage" width="300" style="margin: 10px;" />
 </div>
