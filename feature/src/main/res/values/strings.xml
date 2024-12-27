@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="repository_list">Lista de repositórios</string>
+    <string name="no_repository_found">Nenhum repositório encontrado</string>
+    <string name="github_api_android">GitHub API Android</string>
+    <string name="android_app_to_demonstrate_github_api">App Android para demonstrar o conteúdo da API do GitHub</string>
+    <string name="test_user">pablo-rodrigues-git</string>
+    <string name="menu">Menu</string>
+    <string name="failed_to_load_the_list_click_to_try_again">Falha ao carregar lista, clique para carregar novamente</string>
+    <string name="loading_repository_list">Carregando lista de repositórios…</string>
+    <string name="no_description">Sem descrição</string>
+    <string name="pull_request_1">Pull request 1</string>
+    <string name="fake_date">2023–06–01T12:00:00Z</string>
+    <string name="go_back_to_the_repository_list">Voltar para a lista de repositórios</string>
+    <string name="no_pull_request_found">Nenhum pull request encontrada</string>
+    <string name="pull_request_description">Descrição do pull request</string>
+    <string name="failed_to_load_list">Falha ao carregar lista</string>
+</resources>
