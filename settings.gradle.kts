@@ -22,3 +22,5 @@ dependencyResolutionManagement {
 rootProject.name = "Github-seeker"
 include(":app")
 include(":feature")
+include(":data")
+include(":domain")

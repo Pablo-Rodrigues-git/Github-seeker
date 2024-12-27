@@ -1,4 +1,4 @@
-package com.remotex.feature.commons.theme
+package com.remotex.commons.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

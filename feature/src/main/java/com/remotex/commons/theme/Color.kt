@@ -1,4 +1,4 @@
-package com.remotex.feature.commons.theme
+package com.remotex.commons.theme
 
 import androidx.compose.ui.graphics.Color
 

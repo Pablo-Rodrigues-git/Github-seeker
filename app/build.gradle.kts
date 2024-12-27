@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.remotex.github_seeker"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.remotex.github_seeker"
@@ -56,6 +56,7 @@ android {
 dependencies {
 
     implementation(project(":feature"))
+    implementation(project(":data"))
 
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
