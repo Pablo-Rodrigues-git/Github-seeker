@@ -58,9 +58,6 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
 
-    //Material
-    implementation(libs.material)
-
     // Test libs
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
