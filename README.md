@@ -26,6 +26,7 @@ clique abrindo na web para visualizaçao dos pull-requests
 - [x] [Mockk](https://github.com/mockk/mockk)
 - [x] [Jetpack Compose](https://developer.android.com/compose?_gl=1*nej9dz*_up*MQ..&gclid=CjwKCAiAmrS7BhBJEiwAei59i8_k49vn8oi6V9YF7YqyezLGNQaVHFbvhLdG6tzpCx6OO-dLOwkrdRoCmRMQAvD_BwE&gclsrc=aw.ds)
 - [x] [Material3](https://developer.android.com/develop/ui/compose/designsystems/material3?hl=pt-br)
+- [x] [Lorem Ipsum from jetpack compose](https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/datasource/LoremIpsum)
 
 
 ![image](https://github.com/user-attachments/assets/9cba5429-aa1f-4031-9a70-b759763fb264)![image](https://github.com/user-attachments/assets/9a77b83d-b9f1-481e-9a98-30138d1b8b98)![image](https://github.com/user-attachments/assets/f56a3f4d-9003-4d0c-bb60-c7678fefc76d)
