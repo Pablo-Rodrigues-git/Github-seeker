@@ -1,4 +1,4 @@
-package com.remotex.feature
+package com.remotex.feature.pullrequestlist
 
 import com.remotex.domain.pullrequestlist.interfaces.PullrequestRepository
 import com.remotex.domain.pullrequestlist.models.PullrequestModel
