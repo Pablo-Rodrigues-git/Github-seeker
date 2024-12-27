@@ -54,10 +54,11 @@ android {
 }
 
 dependencies {
-
+    // APP Modules
     implementation(project(":feature"))
     implementation(project(":data"))
 
+    // Androidx
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
@@ -65,13 +66,19 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
+    // Retrofit
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.gson)
+
+    // Hilt
     implementation(libs.hilt)
     implementation(libs.hilt.navigation.compose)
     ksp(libs.hilt.android.compiler)
     ksp(libs.hilt.compiler)
+
+    // Test libs
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

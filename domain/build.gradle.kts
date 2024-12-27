@@ -51,12 +51,16 @@ android {
 }
 
 dependencies {
-
+    // Androidx
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.runtime.android)
+
+    // Material
     implementation(libs.material)
+
+    // Test Libs
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

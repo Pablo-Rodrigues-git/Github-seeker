@@ -51,15 +51,17 @@ android {
 }
 
 dependencies {
-
+    // App Modules
     implementation(project(":data"))
     implementation(project(":domain"))
 
-    implementation(libs.material)
+    // Retrofit
     implementation(libs.retrofit)
-    implementation(libs.converter.gson)
-    implementation(libs.gson)
+
+    // ViewModel
     implementation(libs.lifecycleViewModel)
+
+    // Androidx
     implementation(libs.androidx.runtime.android)
     implementation(libs.androidx.ui.tooling.preview.android)
     implementation(libs.androidx.foundation.layout.android)
@@ -71,11 +73,24 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
+    // Gson
+    implementation(libs.converter.gson)
+    implementation(libs.gson)
+
+    // Glide
     implementation(libs.glide)
+
+    // Material
+    implementation(libs.material)
+
+    // Hilt
     implementation(libs.hilt)
     implementation(libs.hilt.navigation.compose)
     ksp(libs.hilt.android.compiler)
     ksp(libs.hilt.compiler)
+
+    // Test libs
     testImplementation(libs.junit)
     testImplementation(libs.mockk)
     testImplementation(libs.kotlinx.coroutines.test)

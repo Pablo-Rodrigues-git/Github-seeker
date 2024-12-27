@@ -46,15 +46,22 @@ android {
 }
 
 dependencies {
-
+    // APP Modules
     implementation(project(":domain"))
 
+    // Gson
     implementation(libs.converter.gson)
     implementation(libs.gson)
+
+    // Androidx
     implementation(libs.androidx.runtime.android)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
+
+    //Material
     implementation(libs.material)
+
+    // Test libs
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
