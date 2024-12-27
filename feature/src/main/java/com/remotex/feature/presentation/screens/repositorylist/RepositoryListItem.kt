@@ -172,7 +172,7 @@ fun ReposListItemPreview() {
             forksCount = 500000,
             owner = RepositoryOwnerModel(
                 login = stringResource(R.string.test_user),
-                avatarUrl = "https://avatars.githubusercontent.com/u/385686000?v=4"
+                avatarUrl = "https://avatars.githubusercontent.com/u/76755413?v=4"
             )
         ),
         rememberNavController()

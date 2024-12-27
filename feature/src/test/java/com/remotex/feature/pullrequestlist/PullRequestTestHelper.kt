@@ -12,7 +12,7 @@ object PullRequestTestHelper {
             htmlUrl = "",
             user = PullrequestUserModel(
                 login = "pablo-rodrigues-git",
-                avatarUrl = "https://avatars.githubusercontent.com/u/385686000?v=4"
+                avatarUrl = "https://avatars.githubusercontent.com/u/76755413?v=4"
             )
         ),
         PullrequestModel(
@@ -22,7 +22,7 @@ object PullRequestTestHelper {
             htmlUrl = "",
             user = PullrequestUserModel(
                 login = "user-2",
-                avatarUrl = "https://avatars.githubusercontent.com/u/12345678?v=4"
+                avatarUrl = "https://avatars.githubusercontent.com/u/76755413?v=4"
             )
         )
     )
