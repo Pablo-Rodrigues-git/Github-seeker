@@ -49,7 +49,7 @@ fun ReposListItem(
     Box(
         modifier = Modifier
             .padding(8.dp)
-            .border(width = 0.5.dp, color = MaterialTheme.colorScheme.surfaceVariant)
+            .border(width = 0.8.dp, color = MaterialTheme.colorScheme.surfaceVariant)
             .clickable {
                 navController.navigate("pulls/${repositoryModel.owner.login}/${repositoryModel.name}")
             }
