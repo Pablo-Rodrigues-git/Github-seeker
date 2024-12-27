@@ -134,7 +134,7 @@ fun PullsListItemPreview() {
             htmlUrl = "",
             user = PullrequestUserModel(
                 login = stringResource(R.string.test_user),
-                avatarUrl = "https://avatars.githubusercontent.com/u/26586900?v=4"
+                avatarUrl = "https://avatars.githubusercontent.com/u/385686000?v=4"
             )
         )
     )
@@ -146,7 +146,7 @@ fun UserSectionPreview() {
     UserSection(
         PullrequestUserModel(
             login = stringResource(R.string.test_user),
-            avatarUrl = "https://avatars.githubusercontent.com/u/26586900?v=4"
+            avatarUrl = "https://avatars.githubusercontent.com/u/385686000?v=4"
         )
     )
 }
