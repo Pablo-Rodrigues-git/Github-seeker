@@ -40,8 +40,8 @@ class PullrequestViewModelTest {
     }
 
     @Test
-    fun `Success get pull-requests`() = runTest {
-        val pulls = getListOfPulls()
+    fun `GIVEN repository returns pull requests WHEN fetching pull requests THEN state is Success`() = runTest {
+        val pulls =  PullRequestTestHelper.getListOfPulls()
         coEvery { repository.getPulls(any(), any()) } returns pulls
 
         viewModel.getPulls("owner", "repo")
@@ -53,7 +53,7 @@ class PullrequestViewModelTest {
     }
 
     @Test
-    fun `Error geting pull-requests`() = runTest {
+    fun `GIVEN repository throws error WHEN fetching pull requests THEN state is Error`() = runTest {
         val errorMessage = "Network error"
         coEvery { repository.getPulls(any(), any()) } throws Exception(errorMessage)
 
@@ -64,47 +64,4 @@ class PullrequestViewModelTest {
         val state = viewModel.pullrequestListViewState.first()
         assertEquals(state, PullrequestListViewState.Error)
     }
-
-    private fun getListOfPulls(): List<PullrequestModel> = listOf(
-        PullrequestModel(
-            title = "Pull request 1",
-            body = "Descrição da pull request",
-            createdAt = "2023-06-01T12:00:00Z",
-            htmlUrl = "",
-            user = PullrequestUserModel(
-                login = "pablo-rodrigues-git",
-                avatarUrl = "https://avatars.githubusercontent.com/u/385686000?v=4"
-            )
-        ),
-        PullrequestModel(
-            title = "Pull request 1",
-            body = "Descrição da pull request",
-            createdAt = "2023-06-01T12:00:00Z",
-            htmlUrl = "",
-            user = PullrequestUserModel(
-                login = "pablo-rodrigues-git",
-                avatarUrl = "https://avatars.githubusercontent.com/u/385686000?v=4"
-            )
-        ),
-        PullrequestModel(
-            title = "Pull request 1",
-            body = "Descrição da pull request",
-            createdAt = "2023-06-01T12:00:00Z",
-            htmlUrl = "",
-            user = PullrequestUserModel(
-                login = "pablo-rodrigues-git",
-                avatarUrl = "https://avatars.githubusercontent.com/u/385686000?v=4"
-            )
-        ),
-        PullrequestModel(
-            title = "Pull request 1",
-            body = "Descrição da pull request",
-            createdAt = "2023-06-01T12:00:00Z",
-            htmlUrl = "",
-            user = PullrequestUserModel(
-                login = "pablo-rodrigues-git",
-                avatarUrl = "https://avatars.githubusercontent.com/u/385686000?v=4"
-            )
-        )
-    )
 }

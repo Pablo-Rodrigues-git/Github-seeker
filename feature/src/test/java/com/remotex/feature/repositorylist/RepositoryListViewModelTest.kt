@@ -1,7 +1,6 @@
 package com.remotex.feature.repositorylist
 
 import com.remotex.domain.repositorylist.interfaces.ReposRepository
-import com.remotex.domain.repositorylist.models.RepositoryItemsModel
 import com.remotex.feature.presentation.screens.repositorylist.RepositoryListViewModel
 import com.remotex.feature.presentation.screens.repositorylist.RepositoryListViewState
 import io.mockk.coEvery
@@ -38,8 +37,8 @@ class RepositoryListViewModelTest {
     }
 
     @Test
-    fun `Succes WHEN getting list of repositories`() = runTest {
-        val repos = getListOfRepos()
+    fun `GIVEN repository returns success WHEN getting list of repositories THEN state is Success`() = runTest {
+        val repos = RepositoryTestHelper.getListOfRepos()
         coEvery { repository.getRepos(any()) } returns repos
 
         viewModel.getRepos()
@@ -51,7 +50,7 @@ class RepositoryListViewModelTest {
     }
 
     @Test
-    fun `Error WHEN getting list of repositories`() = runTest {
+    fun `GIVEN repository throws error WHEN getting list of repositories THEN state is Error`() = runTest {
         val errorMessage = "Network error"
         coEvery { repository.getRepos(any()) } throws Exception(errorMessage)
 
@@ -62,8 +61,4 @@ class RepositoryListViewModelTest {
         val state = viewModel.repositoryListViewState.first()
         assertEquals(state, RepositoryListViewState.Error)
     }
-
-    private fun getListOfRepos(): RepositoryItemsModel = RepositoryItemsModel(
-        items = listOf()
-    )
 }
