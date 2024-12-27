@@ -7,7 +7,9 @@ Este projeto consiste em exibir uma lista de repositorios vinda da API disponibi
 
 Lista de repositorios,
 exibição de detalhes dos pull-requests destes repositorios,
-clique abrindo na web para visualizaçao dos pull-requests
+clique abrindo na web para visualizaçao dos pull-requests,
+
+Todas as telas apresentam estados de loading, empty e erro caso ocorra nas requisiçoes da API.
 
 **Tecnologias utilizadas:**
 
