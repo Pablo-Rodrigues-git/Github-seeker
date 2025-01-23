@@ -1,6 +1,5 @@
 package com.remotex.data.pullrequestlist.repository
 
-import com.remotex.data.pullrequestlist.dto.PullRequestDTO
 import com.remotex.data.pullrequestlist.mapper.PullsMapper
 import com.remotex.data.pullrequestlist.service.PullsService
 import com.remotex.domain.pullrequestlist.models.PullrequestModel
@@ -18,8 +17,8 @@ class PullrequestRepositoryTest {
 
     @Test
     fun `pull-request-repository-test`(): Unit = runTest {
-        coEvery { service.getPulls(any(), any()) } returns listOf<PullRequestDTO>()
-        every { mapper.toPullsModel(any()) } returns listOf<PullrequestModel>()
+        coEvery { service.getPulls(any(), any()) } returns listOf()
+        every { mapper.toPullsModel(any()) } returns listOf()
 
         val expected = listOf<PullrequestModel>()
         val result = pullsRepository.getPulls("test", "test")

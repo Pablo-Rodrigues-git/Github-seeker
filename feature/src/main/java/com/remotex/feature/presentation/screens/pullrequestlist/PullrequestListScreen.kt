@@ -197,7 +197,7 @@ fun SetupLoading() {
         )
         Text(
             modifier = Modifier.align(Alignment.BottomCenter),
-            text =  stringResource(R.string.loading_repository_list)
+            text =  stringResource(R.string.loading_pull_request_list)
         )
     }
 }
